@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>犬百科 · 狗狗品种与喜好科普</title>
+  <meta name="description" content="以层级化信息架构呈现犬种图鉴、性格偏好、饲养指南、健康百科与趣味互动工具。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#map">跳到主要内容</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">
+        <i data-lucide="paw-print"></i>
+        <span>犬百科</span>
+      </a>
+      <nav class="topnav" aria-label="主导航">
+        <a href="#map">功能地图</a>
+        <a href="#breeds">犬种图鉴</a>
+        <a href="#filter">偏好匹配</a>
+        <a href="#care">饲养百科</a>
+        <a href="#health">健康百科</a>
+        <a href="#gallery">萌犬画廊</a>
+        <a href="#quiz">趣味测试</a>
+        <a href="#compare">品种对比</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-wall" aria-hidden="true">
+        <img src="assets/img/breeds/golden.jpg" alt="">
+        <img src="assets/img/breeds/border-collie.jpg" alt="">
+        <img src="assets/img/breeds/samoyed.jpg" alt="">
+        <img src="assets/img/breeds/labrador.jpg" alt="">
+        <img src="assets/img/breeds/shiba.jpg" alt="">
+        <img src="assets/img/breeds/poodle.jpg" alt="">
+        <img src="assets/img/breeds/husky.jpg" alt="">
+        <img src="assets/img/breeds/collie.jpg" alt="">
+      </div>
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">犬类知识科普站</p>
+        <h1>读懂狗狗，<br>从品种开始</h1>
+        <p class="lead">从犬种起源、性格偏好到饲养与健康，所有内容按「总览 → 分类 → 明细」组织，先看清结构，再深入每一只狗狗的世界。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#breeds">
+            浏览犬种图鉴
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a class="btn btn-ghost" href="#quiz">
+            做 1 分钟匹配测试
+            <i data-lucide="sparkles"></i>
+          </a>
+        </div>
+        <ul class="hero-stats" aria-label="站点数据">
+          <li><strong>12</strong><span>常见犬种</span></li>
+          <li><strong>6</strong><span>性格维度</span></li>
+          <li><strong>4</strong><span>饲养板块</span></li>
+          <li><strong>3</strong><span>健康层级</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="map">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Information Architecture</p>
+          <h2>站内功能地图</h2>
+          <p class="section-sub">全部功能按「一级功能 → 二级分类 → 三级明细」展示，点击即可直达。</p>
+        </header>
+
+        <div class="route-guide" aria-hidden="true">
+          <svg viewBox="0 0 1200 150" preserveAspectRatio="xMidYMid meet">
+            <path class="route-line" d="M60 70 C 230 20, 350 120, 520 70 S 810 20, 980 70 S 1160 70, 1240 70" fill="none"></path>
+            <circle class="route-node" cx="150" cy="70" r="30"></circle>
+            <text x="150" y="78" text-anchor="middle" class="route-num">1</text>
+            <text x="150" y="118" text-anchor="middle" class="route-text">认识犬种</text>
+            <circle class="route-node" cx="470" cy="70" r="30"></circle>
+            <text x="470" y="78" text-anchor="middle" class="route-num">2</text>
+            <text x="470" y="118" text-anchor="middle" class="route-text">智能匹配</text>
+            <circle class="route-node" cx="790" cy="70" r="30"></circle>
+            <text x="790" y="78" text-anchor="middle" class="route-num">3</text>
+            <text x="790" y="118" text-anchor="middle" class="route-text">生活指南</text>
+            <circle class="route-node" cx="1110" cy="70" r="30"></circle>
+            <text x="1110" y="78" text-anchor="middle" class="route-num">4</text>
+            <text x="1110" y="118" text-anchor="middle" class="route-text">互动工具</text>
+            <g class="route-dot">
+              <circle r="9" fill="#ff6b4a"></circle>
+              <animateMotion dur="7s" repeatCount="indefinite" path="M60 70 C 230 20, 350 120, 520 70 S 810 20, 980 70 S 1160 70, 1240 70"></animateMotion>
+            </g>
+          </svg>
+        </div>
+
+        <div class="map-grid">
+          <article class="map-card map-card-green">
+            <div class="map-icon"><i data-lucide="book-open"></i></div>
+            <h3>犬种知识库</h3>
+            <p>看分类、找品种、读详情</p>
+            <ul>
+              <li><a href="#breeds">六大犬种分组</a></li>
+              <li><a href="#breeds">12 个犬种档案</a></li>
+              <li><a href="#breeds">性格 × 喜好雷达</a></li>
+            </ul>
+          </article>
+
+          <article class="map-card map-card-coral">
+            <div class="map-icon"><i data-lucide="sliders-horizontal"></i></div>
+            <h3>智能匹配</h3>
+            <p>按条件筛选理想伙伴</p>
+            <ul>
+              <li><a href="#filter">居住空间筛选</a></li>
+              <li><a href="#filter">经验与活动量</a></li>
+              <li><a href="#quiz">趣味测试推荐</a></li>
+            </ul>
+          </article>
+
+          <article class="map-card map-card-sky">
+            <div class="map-icon"><i data-lucide="heart-pulse"></i></div>
+            <h3>生活指南</h3>
+            <p>饲养与健康分册阅读</p>
+            <ul>
+              <li><a href="#care">饮食 / 运动 / 美容 / 训练</a></li>
+              <li><a href="#health">遗传与结构风险</a></li>
+              <li><a href="#health">疫苗驱虫与日常观察</a></li>
+            </ul>
+          </article>
+
+          <article class="map-card map-card-amber">
+            <div class="map-icon"><i data-lucide="scale"></i></div>
+            <h3>互动工具</h3>
+            <p>测试、比较、一键返回</p>
+            <ul>
+              <li><a href="#quiz">5 题理想犬种测试</a></li>
+              <li><a href="#compare">双品种横向对比</a></li>
+              <li><a href="#top">回到页面顶部</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="breeds">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Breed Encyclopedia</p>
+          <h2>犬种图鉴</h2>
+          <p class="section-sub">一级：犬种知识库 → 二级：六大分组 → 三级：品种详情卡。点开任意卡片查看完整档案。</p>
+        </header>
+
+        <div class="group-tabs" id="groupTabs" role="tablist" aria-label="犬种分组"></div>
+        <div class="breed-grid" id="breedGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="filter">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Smart Matching</p>
+          <h2>偏好匹配</h2>
+          <p class="section-sub">一级：智能匹配 → 二级：五类条件 → 三级：匹配结果与理由。所有条件可叠加。</p>
+        </header>
+
+        <div class="filter-layout">
+          <aside class="filter-panel" aria-label="筛选条件">
+            <div class="field">
+              <span class="field-label"><i data-lucide="home"></i>居住空间</span>
+              <div class="seg" data-filter="space">
+                <button type="button" data-value="small">小户型</button>
+                <button type="button" data-value="mid">中户型</button>
+                <button type="button" data-value="large">有院子</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <span class="field-label"><i data-lucide="graduation-cap"></i>养宠经验</span>
+              <div class="seg" data-filter="experience">
+                <button type="button" data-value="beginner">新手</button>
+                <button type="button" data-value="pro">有经验</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <span class="field-label"><i data-lucide="activity"></i>活动量 <output id="energyOutput">3</output></span>
+              <input type="range" id="energyRange" min="1" max="5" step="1" value="3" aria-label="活动量">
+              <div class="range-labels"><span>低</span><span>中</span><span>高</span></div>
+            </div>
+
+            <div class="field">
+              <span class="field-label"><i data-lucide="users"></i>家庭成员</span>
+              <div class="chip-set" data-filter="family">
+                <button type="button" data-value="single">独居</button>
+                <button type="button" data-value="couple">情侣</button>
+                <button type="button" data-value="kids">有儿童</button>
+                <button type="button" data-value="elder">有老人</button>
+              </div>
+            </div>
+
+            <div class="field">
+              <span class="field-label"><i data-lucide="droplet"></i>掉毛接受度</span>
+              <div class="seg" data-filter="shed">
+                <button type="button" data-value="low">基本不掉</button>
+                <button type="button" data-value="mid">可以接受</button>
+                <button type="button" data-value="any">无所谓</button>
+              </div>
+            </div>
+
+            <button class="btn btn-outline btn-reset" id="resetFilters" type="button">
+              <i data-lucide="rotate-ccw"></i>
+              重置全部条件
+            </button>
+          </aside>
+
+          <div class="filter-results">
+            <div class="result-summary" id="resultSummary"></div>
+            <div class="match-list" id="matchList"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="care">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Care Guide</p>
+          <h2>饲养百科</h2>
+          <p class="section-sub">一级：生活指南 → 二级：四大饲养板块 → 三级：每日操作明细。</p>
+        </header>
+
+        <div class="route-guide route-guide-compact" aria-hidden="true">
+          <svg viewBox="0 0 1200 110" preserveAspectRatio="xMidYMid meet">
+            <path class="route-line" d="M80 42 C 260 12, 360 72, 530 42 S 820 12, 990 42 S 1140 42, 1240 42" fill="none"></path>
+            <circle class="route-node" cx="165" cy="42" r="22"></circle>
+            <text x="165" y="49" text-anchor="middle" class="route-num route-num-sm">1</text>
+            <text x="165" y="84" text-anchor="middle" class="route-text">饮食</text>
+            <circle class="route-node" cx="485" cy="42" r="22"></circle>
+            <text x="485" y="49" text-anchor="middle" class="route-num route-num-sm">2</text>
+            <text x="485" y="84" text-anchor="middle" class="route-text">运动</text>
+            <circle class="route-node" cx="805" cy="42" r="22"></circle>
+            <text x="805" y="49" text-anchor="middle" class="route-num route-num-sm">3</text>
+            <text x="805" y="84" text-anchor="middle" class="route-text">美容</text>
+            <circle class="route-node" cx="1115" cy="42" r="22"></circle>
+            <text x="1115" y="49" text-anchor="middle" class="route-num route-num-sm">4</text>
+            <text x="1115" y="84" text-anchor="middle" class="route-text">训练</text>
+            <g class="route-dot">
+              <circle r="8" fill="#ff6b4a"></circle>
+              <animateMotion dur="5s" repeatCount="indefinite" path="M80 42 C 260 12, 360 72, 530 42 S 820 12, 990 42 S 1140 42, 1240 42"></animateMotion>
+            </g>
+          </svg>
+        </div>
+
+        <div class="care-grid">
+          <details class="care-panel care-panel-green" open>
+            <div class="care-photo"><img src="assets/img/gallery/dalmatian.jpg" alt="大麦町犬"></div>
+            <summary>
+              <span class="care-icon"><i data-lucide="utensils"></i></span>
+              <span class="care-title">
+                <strong>饮食管理</strong>
+                <small>基础营养 · 喂食节奏 · 禁忌清单</small>
+              </span>
+              <i data-lucide="chevron-down" class="care-chevron"></i>
+            </summary>
+            <ul class="care-list">
+              <li><strong>基础营养</strong><span>优质蛋白质优先，搭配适量脂肪、碳水与微量元素；大型犬幼年期注意控制生长速度。</span></li>
+              <li><strong>喂食节奏</strong><span>幼犬每日 3-4 餐，成犬 1-2 餐；运动前后留出消化间隔，避免胃扭转风险。</span></li>
+              <li><strong>禁忌清单</strong><span>巧克力、洋葱、葡萄、木糖醇与高盐高油食物都可能导致中毒或代谢问题。</span></li>
+            </ul>
+          </details>
+
+          <details class="care-panel care-panel-coral" open>
+            <div class="care-photo"><img src="assets/img/breeds/husky.jpg" alt="哈士奇"></div>
+            <summary>
+              <span class="care-icon"><i data-lucide="dumbbell"></i></span>
+              <span class="care-title">
+                <strong>运动方案</strong>
+                <small>每日需求 · 互动游戏 · 户外安全</small>
+              </span>
+              <i data-lucide="chevron-down" class="care-chevron"></i>
+            </summary>
+            <ul class="care-list">
+              <li><strong>每日需求</strong><span>按品种匹配运动量：工作犬与牧羊犬需要高强度消耗，玩赏犬以轻松散步和游戏为主。</span></li>
+              <li><strong>互动游戏</strong><span>嗅闻垫、巡回、敏捷小障碍既能消耗体力，也能训练专注力与服从性。</span></li>
+              <li><strong>户外安全</strong><span>高温天避免正午暴走，牵绳随行，夏天留意柏油路温度，冬天保护脚垫。</span></li>
+            </ul>
+          </details>
+
+          <details class="care-panel care-panel-sky" open>
+            <div class="care-photo"><img src="assets/img/breeds/samoyed.jpg" alt="萨摩耶"></div>
+            <summary>
+              <span class="care-icon"><i data-lucide="scissors"></i></span>
+              <span class="care-title">
+                <strong>美容打理</strong>
+                <small>毛发护理 · 洗澡频率 · 细节清洁</small>
+              </span>
+              <i data-lucide="chevron-down" class="care-chevron"></i>
+            </summary>
+            <ul class="care-list">
+              <li><strong>毛发护理</strong><span>双层被毛犬种换毛季勤梳毛；卷毛犬需定期修剪，避免打结和皮肤闷热。</span></li>
+              <li><strong>洗澡频率</strong><span>一般 3-6 周一次，使用犬用洗护产品，过度洗澡会破坏皮肤屏障。</span></li>
+              <li><strong>细节清洁</strong><span>每周检查耳朵、指甲与牙齿，垂耳犬种尤其需要保持耳道干爽。</span></li>
+            </ul>
+          </details>
+
+          <details class="care-panel care-panel-amber" open>
+            <div class="care-photo"><img src="assets/img/breeds/border-collie.jpg" alt="边境牧羊犬"></div>
+            <summary>
+              <span class="care-icon"><i data-lucide="graduation-cap"></i></span>
+              <span class="care-title">
+                <strong>训练进阶</strong>
+                <small>基础指令 · 社会化 · 正向强化</small>
+              </span>
+              <i data-lucide="chevron-down" class="care-chevron"></i>
+            </summary>
+            <ul class="care-list">
+              <li><strong>基础指令</strong><span>坐、等、来、走是生活安全底线，每次训练 5-10 分钟，短时高频效果更好。</span></li>
+              <li><strong>社会化</strong><span>幼犬期接触不同人、狗、声音与场景，能显著降低成年后的恐惧与攻击行为。</span></li>
+              <li><strong>正向强化</strong><span>奖励正确行为而非惩罚错误行为，用零食、玩具和语言保持狗狗的学习热情。</span></li>
+            </ul>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="health">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Health Knowledge</p>
+          <h2>健康百科</h2>
+          <p class="section-sub">一级：生活指南 → 二级：健康三层 → 三级：疾病风险、预防计划与日常观察。</p>
+        </header>
+
+        <div class="health-layout">
+          <div class="health-route" aria-hidden="true">
+            <svg viewBox="0 0 170 380" preserveAspectRatio="xMidYMid meet">
+              <path class="route-line route-line-vertical" d="M80 30 C 150 90, 10 130, 80 190 S 10 300, 80 350" fill="none"></path>
+              <circle class="route-node" cx="80" cy="45" r="22"></circle>
+              <text x="80" y="52" text-anchor="middle" class="route-num route-num-sm">1</text>
+              <text x="112" y="49" class="route-text">了解风险</text>
+              <circle class="route-node" cx="80" cy="190" r="22"></circle>
+              <text x="80" y="197" text-anchor="middle" class="route-num route-num-sm">2</text>
+              <text x="112" y="194" class="route-text">主动预防</text>
+              <circle class="route-node" cx="80" cy="330" r="22"></circle>
+              <text x="80" y="337" text-anchor="middle" class="route-num route-num-sm">3</text>
+              <text x="112" y="334" class="route-text">日常观察</text>
+              <g class="route-dot">
+                <circle r="8" fill="#ff6b4a"></circle>
+                <animateMotion dur="6s" repeatCount="indefinite" path="M80 30 C 150 90, 10 130, 80 190 S 10 300, 80 350"></animateMotion>
+              </g>
+            </svg>
+          </div>
+
+          <div class="health-grid">
+            <article class="health-card">
+              <div class="health-photo"><img src="assets/img/breeds/corgi.jpg" alt="柯基犬"></div>
+              <span class="health-num">01</span>
+              <h3><i data-lucide="dna"></i>遗传与结构风险</h3>
+              <ul>
+                <li><strong>髋 / 肘关节发育不良</strong><span>大型犬与工作犬高发，早期表现为步态异常、起身困难。</span></li>
+                <li><strong>遗传性眼病</strong><span>如进行性视网膜萎缩、白内障，建议种犬做眼科筛查。</span></li>
+                <li><strong>椎间盘疾病</strong><span>柯基、比格等长背短腿犬种需避免频繁跳上跳下。</span></li>
+                <li><strong>皮肤与过敏</strong><span>褶皱皮肤、过敏性皮炎需要保持清洁与低敏饮食。</span></li>
+              </ul>
+            </article>
+
+            <article class="health-card">
+              <div class="health-photo"><img src="assets/img/gallery/boxer.jpg" alt="拳师犬"></div>
+              <span class="health-num">02</span>
+              <h3><i data-lucide="syringe"></i>疫苗与驱虫</h3>
+              <ul>
+                <li><strong>核心疫苗</strong><span>犬瘟热、细小病毒、腺病毒与狂犬病按兽医时间表接种。</span></li>
+                <li><strong>体内驱虫</strong><span>幼犬每月一次，成犬按环境风险每 1-3 个月一次。</span></li>
+                <li><strong>体外防护</strong><span>跳蚤、蜱虫与心丝虫需按季节使用预防产品，外出草地后检查皮毛。</span></li>
+                <li><strong>定期体检</strong><span>每年一次基础体检，7 岁以上犬只建议增加血液与影像检查。</span></li>
+              </ul>
+            </article>
+
+            <article class="health-card">
+              <div class="health-photo"><img src="assets/img/breeds/beagle.jpg" alt="比格犬"></div>
+              <span class="health-num">03</span>
+              <h3><i data-lucide="clipboard-check"></i>日常观察清单</h3>
+              <ul>
+                <li><strong>食欲与饮水</strong><span>连续 24 小时不进食或饮水异常增多，需要引起重视。</span></li>
+                <li><strong>精神状态</strong><span>突然嗜睡、躲藏、攻击或过度喘气都可能是身体不适的信号。</span></li>
+                <li><strong>排泄与体重</strong><span>留意粪便性状、排尿频率与体重突增突减，每月固定记录一次。</span></li>
+                <li><strong>皮肤与口腔</strong><span>抓挠、脱毛、口臭与牙龈红肿建议尽快就医排查。</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="notice-strip">
+          <i data-lucide="shield-plus"></i>
+          <p><strong>重要提示：</strong>本页为一般性科普，不替代兽医诊断。发现异常症状时，请第一时间咨询专业兽医。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="gallery">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Happy Gallery</p>
+          <h2>萌犬画廊</h2>
+          <p class="section-sub">图鉴之外的 16 位朋友：先看脸，再记住它们的性格冷知识。</p>
+        </header>
+
+        <div class="gallery-bar">
+          <button class="gallery-nav" id="galleryPrev" type="button" aria-label="向左滚动"><i data-lucide="chevron-left"></i></button>
+          <button class="gallery-nav" id="galleryNext" type="button" aria-label="向右滚动"><i data-lucide="chevron-right"></i></button>
+        </div>
+
+        <div class="gallery-scroll" id="galleryTrack">
+          <article class="gallery-card"><img src="assets/img/gallery/akita.jpg" alt="秋田犬"><div class="gallery-overlay"><h3>秋田犬</h3><span>忠诚之犬</span><p>对家人忠诚，曾因忠犬八公的故事闻名。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/pug.jpg" alt="巴哥犬"><div class="gallery-overlay"><h3>巴哥犬</h3><span>可爱褶皱</span><p>爱打呼噜，是安静陪伴型选手。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/chihuahua.jpg" alt="吉娃娃"><div class="gallery-overlay"><h3>吉娃娃</h3><span>迷你胆量</span><p>世界上最小犬种之一，胆量却不小。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/pomeranian.jpg" alt="博美犬"><div class="gallery-overlay"><h3>博美犬</h3><span>蓬松毛球</span><p>蓬松小毛球，常被称为狮子狗。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/dalmatian.jpg" alt="大麦町犬"><div class="gallery-overlay"><h3>大麦町犬</h3><span>斑点之谜</span><p>出生时纯白，斑点会慢慢长出来。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/boxer.jpg" alt="拳师犬"><div class="gallery-overlay"><h3>拳师犬</h3><span>爱玩大个子</span><p>精力充沛，爱用前爪打拳玩耍。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/rottweiler.jpg" alt="罗威纳犬"><div class="gallery-overlay"><h3>罗威纳犬</h3><span>反差萌</span><p>表面严肃，对家人其实很黏人。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/maltese.jpg" alt="玛尔济斯犬"><div class="gallery-overlay"><h3>玛尔济斯犬</h3><span>白色丝毛</span><p>白色长毛小型犬，几乎不掉毛。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/dachshund.jpg" alt="腊肠犬"><div class="gallery-overlay"><h3>腊肠犬</h3><span>钻洞高手</span><p>长身短腿，天生擅长钻洞捕猎。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/australian-shepherd.jpg" alt="澳洲牧羊犬"><div class="gallery-overlay"><h3>澳洲牧羊犬</h3><span>名字之谜</span><p>名字带澳洲，实际在美国发扬光大。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/malamute.jpg" alt="阿拉斯加雪橇犬"><div class="gallery-overlay"><h3>阿拉斯加雪橇犬</h3><span>雪地大力士</span><p>比哈士奇更壮实，雪地耐力惊人。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/newfoundland.jpg" alt="纽芬兰犬"><div class="gallery-overlay"><h3>纽芬兰犬</h3><span>天生救生员</span><p>天生会游泳，救生本能出色。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/sharpei.jpg" alt="沙皮犬"><div class="gallery-overlay"><h3>沙皮犬</h3><span>褶皱绅士</span><p>皮肤松弛褶皱多，性格沉稳独立。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/weimaraner.jpg" alt="魏玛猎犬"><div class="gallery-overlay"><h3>魏玛猎犬</h3><span>灰色幽灵</span><p>银灰色被毛，奔跑姿态优雅。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/whippet.jpg" alt="惠比特犬"><div class="gallery-overlay"><h3>惠比特犬</h3><span>短跑冠军</span><p>短跑极快，速度可达每小时 50 公里以上。</p></div></article>
+          <article class="gallery-card"><img src="assets/img/gallery/poodle-toy.jpg" alt="玩具贵宾犬"><div class="gallery-overlay"><h3>玩具贵宾犬</h3><span>聪明毛绒</span><p>聪明且掉毛少，常被选为陪伴犬。</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="quiz">
+      <div class="container">
+        <header class="section-head section-head-light">
+          <p class="kicker">Personality Quiz</p>
+          <h2>趣味测试：找到你的理想犬种</h2>
+          <p class="section-sub">5 道题，从活动量、空间、经验、家庭与打理偏好出发，生成推荐名单。</p>
+        </header>
+        <div class="quiz-shell" id="quizApp"></div>
+      </div>
+    </section>
+
+    <section class="section" id="compare">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Breed Compare</p>
+          <h2>品种对比</h2>
+          <p class="section-sub">任选两个犬种，横向比较体型数据、性格维度与健康关注。</p>
+        </header>
+
+        <div class="compare-layout">
+          <div class="compare-pickers">
+            <div class="compare-pick">
+              <span>A</span>
+              <select id="compareA" aria-label="对比品种 A"></select>
+            </div>
+            <button class="swap-btn" id="swapCompare" type="button" aria-label="交换对比品种"><i data-lucide="arrow-left-right"></i></button>
+            <div class="compare-pick">
+              <span>B</span>
+              <select id="compareB" aria-label="对比品种 B"></select>
+            </div>
+          </div>
+          <div id="compareBoard" class="compare-board"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#top">
+          <i data-lucide="paw-print"></i>
+          <span>犬百科</span>
+        </a>
+        <p>以清晰层级组织犬类科普，让每一次了解都从结构开始。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容结构</h4>
+        <ul>
+          <li><a href="#map">功能地图</a></li>
+          <li><a href="#breeds">犬种图鉴</a></li>
+          <li><a href="#filter">偏好匹配</a></li>
+          <li><a href="#gallery">萌犬画廊</a></li>
+          <li><a href="#compare">品种对比</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>资料说明</h4>
+        <ul>
+          <li>犬种照片：Dog CEO API</li>
+          <li>图标：Lucide（ISC）</li>
+          <li>数据为一般性科普参考</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 犬百科 · 尊重生命，科学养宠</p>
+    </div>
+  </footer>
+
+  <dialog class="breed-dialog" id="breedDialog" aria-labelledby="dialogTitle"></dialog>
+
+  <button class="back-top" id="backTop" type="button" aria-label="返回顶部">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
+  <script src="assets/vendor/lucide.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
